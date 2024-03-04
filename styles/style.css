@@ -15,6 +15,8 @@
 .header {
   padding: 0 20px;
   position: relative;
+  height: 100vh;
+  min-height: 668px;
   min-width: 375px;
 }
 
@@ -36,7 +38,7 @@
   border-left: 1px solid var(--corners-color);
   border-bottom: 1px solid var(--corners-color);
   left: 2vw;
-  bottom: 0;
+  bottom: 18px;
 }
 
 .decorated-zone::after {
@@ -46,7 +48,7 @@
   height: 25px;
   border-right: 1px solid var(--corners-color);
   border-top: 1px solid var(--corners-color);
-  right: 2vw;
+  right: 3vw;
   top: 20px;
 }
 
@@ -55,7 +57,7 @@
   text-transform: uppercase;
   color: var(--recording-color);
   top: 21px;
-  right: 50px;
+  right: calc(23px + 3vw);
 }
 
 .visual-element__recording::after {
@@ -63,12 +65,11 @@
   position: absolute;
   width: 9px;
   height: 9px;
-  margin: -3px -19px 0 11px;
   background-color: var(--recording-color);
   border-radius: 50%;
   box-shadow: 0 0 4px 2px var(--recording-color);
-  top: 50%;
-  right: 0;
+  top: 8px;
+  right: -15px;
 }
 
 .header__theme-menu-list {
@@ -106,7 +107,9 @@
 .header__theme-menu-button:hover {
   border: var(--hover-color);
 }
+
 .header__theme-menu-button:focus {
+  outline: none;
   border: none;
 }
 
@@ -252,8 +255,6 @@
 
 @media (width <= 768px) {
   .text__container {
-    display: grid;
-    gap: 20px;
     grid-template-columns: auto;
     max-width: 93vw;
     margin: auto;
@@ -270,7 +271,7 @@
 
 .paragraph__block-link {
   border: transparent;
-  text-shadow: 3px 3px 0px var(--link-shadow);
+  text-shadow: 2px 2px 0px var(--link-shadow);
   transition-duration: var(--transition-duration);
 }
 
@@ -301,6 +302,7 @@
     gap: 5px;
     margin-top: -7px;
   }
+
   .section__gallery {
     margin: 45px 0 0 3vw;
   }
@@ -365,26 +367,4 @@
     margin-top: -8px;
     padding: 316px 10px 267px;
   }
-}
-
-.footer::before {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border-left: 1px solid var(--corners-color);
-  border-bottom: 1px solid var(--corners-color);
-  left: 2vw;
-  bottom: 20px;
-}
-
-.footer::after {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  border-right: 1px solid var(--corners-color);
-  border-top: 1px solid var(--corners-color);
-  right: 2vw;
-  top: 66px;
 }
