@@ -15,7 +15,7 @@
   --article-title-color: var(--main-text-color);
   --section-title-color: var(--main-text-color);
   --border-color: var(--title-shadow);
-  --link-shadow: var(--title-color);
+  --link-shadow: var(--title-shadow);
   --menu-color: var(--main-text-color);
   --recording-color: var(--background-color);
   --corners-color: var(--main-text-color);
@@ -33,7 +33,7 @@
     --article-title-color: var(--main-text-color);
     --section-title-color: var(--main-text-color);
     --border-color: var(--title-shadow);
-    --link-shadow: var(--title-color);
+    --link-shadow: var(--title-shadow);
     --menu-color: var(--main-text-color);
     --recording-color: var(--background-color);
     --corners-color: var(--main-text-color);

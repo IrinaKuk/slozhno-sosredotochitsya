@@ -14,7 +14,8 @@
   --article-title-color: var(--background-color);
   --section-title-color: var(--title-shadow);
   --border-color: var(--main-text-color);
-  --link-shadow: var(--title-color);
+  --link-shadow: var(--title-shadow);
   --menu-color: var(--title-shadow);
   --recording-color: var(--title-shadow);
+  --corners-color: var(--title-shadow);
 }

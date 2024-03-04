@@ -37,7 +37,7 @@
   height: 25px;
   border-left: 1px solid var(--corners-color);
   border-bottom: 1px solid var(--corners-color);
-  left: 2vw;
+  left: 2.3vw;
   bottom: 18px;
 }
 
@@ -48,7 +48,7 @@
   height: 25px;
   border-right: 1px solid var(--corners-color);
   border-top: 1px solid var(--corners-color);
-  right: 3vw;
+  right: 2.3vw;
   top: 20px;
 }
 
@@ -57,7 +57,7 @@
   text-transform: uppercase;
   color: var(--recording-color);
   top: 21px;
-  right: calc(23px + 3vw);
+  right: calc(25px + 2.5vw);
 }
 
 .visual-element__recording::after {
@@ -164,11 +164,6 @@
   margin-left: -2%;
 }
 
-@media (width < 1024px) {
-  .header__title {
-    text-shadow: 2px 2px 0px var(--title-decor);
-  }
-}
 
 .content__subtitle {
   background-color: var(--title-decor);
@@ -219,6 +214,16 @@
   margin-top: 80px;
 }
 
+.section:first-child {
+  margin-top: 61px;
+}
+
+@media (width < 768px) {
+  .section:first-child {
+    margin-top: 80px;
+  }
+}
+
 .section__title {
   display: block;
   margin-bottom: 20px;
@@ -240,7 +245,7 @@
   grid-template-rows: auto;
   grid-column: span 2;
   gap: 20px;
-  padding-left: 8px;
+  padding-left: 11px;
 }
 
 .content__paragraph {
@@ -275,15 +280,15 @@
   transition-duration: var(--transition-duration);
 }
 
-.section__article-text-link:hover {
+.paragraph__block-link:hover {
   border-bottom: 1px solid var(--main-text-color);
 }
 
-.section__article-text-link:focus {
+.paragraph__block-link:focus {
   outline: none;
 }
 
-.section__article-text-link:focus-visible {
+.paragraph__block-link:focus-visible {
   outline: 1px solid var(--main-text-color);
 }
 
@@ -292,7 +297,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  max-width: 100%;
+  max-width: 99%;
+  margin-bottom: 57px;
 }
 
 @media (width < 768px) {
@@ -305,6 +311,14 @@
 
   .section__gallery {
     margin: 45px 0 0 3vw;
+  }
+}
+
+@media (width <= 376px) {
+  .gallery {
+    margin-top: -3px;
+    min-width: 355px;
+    margin-bottom: 33px;
   }
 }
 
@@ -332,7 +346,7 @@
 }
 
 .footer {
-  padding: 329px 20px 280px;
+  padding: 283px 20px 280px;
   position: relative;
   text-align: center;
 }
@@ -358,13 +372,13 @@
 
 @media (width < 1024px) and (min-width: 768px) {
   .footer {
-    padding: 481px 20px 433px;
+    padding: 431px 20px 431px;
   }
 }
 
 @media (width < 768px) {
   .footer {
     margin-top: -8px;
-    padding: 316px 10px 267px;
+    padding: 270px 10px 262px;
   }
 }
