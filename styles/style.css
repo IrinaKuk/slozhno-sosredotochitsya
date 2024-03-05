@@ -382,7 +382,9 @@
 }
 
 .footer {
-  padding: 283px 20px 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   text-align: center;
   height: 100vh;
@@ -405,17 +407,5 @@
 @media (width < 768px) {
   .footer__title {
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-  }
-}
-
-@media (width < 1024px) and (min-width: 768px) {
-  .footer {
-    padding: 431px 20px;
-  }
-}
-
-@media (width < 768px) {
-  .footer {
-    padding: 262px 10px;
   }
 }
