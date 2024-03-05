@@ -11,7 +11,8 @@
   --title-color: #ffc2e6;
   --title-shadow: #ff0070;
   --title-decor: #ff8dcb;
-  --hover-color: 1px solid var(--main-text-color);
+  --hover-translucent-color: rgba(50, 49, 45, 0.4);
+  --hover-color: var(--main-text-color);
   --article-title-color: var(--main-text-color);
   --section-title-color: var(--main-text-color);
   --border-color: var(--main-text-color);
@@ -29,7 +30,8 @@
     --title-color: #ffc2e6;
     --title-shadow: #ff0070;
     --title-decor: #ff8dcb;
-    --hover-color: 1px solid var(--main-text-color);
+    --hover-translucent-color: rgba(50, 49, 45, 0.4);
+    --hover-color: var(--main-text-color);
     --article-title-color: var(--main-text-color);
     --section-title-color: var(--main-text-color);
     --border-color: var(--main-text-color);

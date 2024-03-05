@@ -10,8 +10,9 @@
   --background-image: url(../images/cover-image-dark.png);
   --title-color: #db00ff;
   --title-shadow: #ff0070;
+  --hover-translucent-color: rgba(255, 0, 112, 0.4);
   --title-decor: var(--title-shadow);
-  --hover-color: 1px solid var(--main-text-color);
+  --hover-color: var(--main-text-color);
   --article-title-color: var(--background-color);
   --section-title-color: var(--title-shadow);
   --border-color: var(--main-text-color);
